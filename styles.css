@@ -1,0 +1,251 @@
+/*HEADER */
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+
+  }
+  
+  
+
+
+  
+  
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    /*border-right: #333 solid 2px;*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+h1 {
+    margin-left: 5%;
+    text-decoration: underline;
+    font-size: 50px;
+
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .closebtn {
+    padding-right:15px;
+    border: rgb(222, 221, 219) solid;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/*BODY*/
+
+div.gallery {
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-left: 10%;
+  width: 20%;
+  display: inline-block; 
+  margin-right:20px;
+  margin-bottom: 10%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+
+
+div.gallery img {
+ 
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  
+  padding: 15px;
+  text-align: center;
+}
+p {
+    line-height: 2;
+}
+
+#p1 {
+  text-align: center;
+    font-size: 22px;
+    float: right;
+    
+    font-weight: bold;
+    padding: 5%;
+    line-height: 2;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*box-shadow: 0.5px 0.5px 25px  rgb(0, 0, 0);*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    background-color: rgb(222, 221, 219);
+    color:  #333;
+}
+
+#notice {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+#p2 {
+    z-index: 1;
+    padding-top: 90px;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+#p3 {
+    padding: 50px;
+}
+
+#intro {
+    display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    font-size: large;
+}
+#introh {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#laptop {
+  width: 10%;
+  height: 10%;
+  float: right;
+}
+
+#bottomBody {
+    background-color: white;
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+  background-color: rgb(142, 114, 97);
+  font-style: italic;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: small;
+}
+/*CONTACT PAGE*/
+form { 
+  background-color: #EAEAEA;
+  font-family: Arial, sans-serif;
+  height: 70%;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
+h2 {
+  margin-left:5%;
+  text-align: center;
+  line-height: 2;
+}
+label { 
+  float: left; clear: left;
+   display: block; width: 100px; 
+   text-align: right; 
+   padding-right: 10px;
+   margin-top: 10px;
+   margin-left: 10%;
+   }
+input, textarea { margin-top: 10px; 
+               display: block;}
+input[type="submit"] { margin-left: 110px; }
+
+@supports (display: grid) {
+form {  
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em; gap: 1em;
+        background-color: #EAEAEA;
+        font-family: Arial, sans-serif;
+        min-width: 25em; width: 60%; 
+        padding: 1.5em 
+      }
+input[type="submit"] { grid-column: 2 / 3;
+                    width: 10em; margin-left: 0;} 
+h1 {
+  text-align: center;
+}
+}
